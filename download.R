@@ -2,7 +2,8 @@
 # Download data files
 # downloads binary .zip file from https:// on windows machine
 # unzips the file and returns file names of the unzipped files
-# doesn't download the file if it already exists!
+# doesn't download the file if it already exists, but does overwrite unzipped
+# files.
 # =============================================================================
 dldata <- function(dlfilepath, dataURL){
     

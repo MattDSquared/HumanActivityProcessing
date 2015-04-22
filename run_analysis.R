@@ -20,6 +20,7 @@ filenames <- dldata("UCI HAR dataset.zip",
 # do this here instead of in separate function for purposes of course grading
 # =============================================================================
 
+
 # =============================================================================
 # 1. Merge test and training data sets
 # =============================================================================
