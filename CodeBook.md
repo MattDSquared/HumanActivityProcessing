@@ -2,7 +2,9 @@
 ## Overview
 As explained the README.md file of this repo, the data and much of the explanation for it can be found from the study's host website. See README.md for an explanation of how this dataset was built.
 
-All data in this dataset is derived from the accelerometer and gyroscope of a Samsung Galaxy S II. The data produced by `run_analysis.R` is saved to the file `tidydata.txt`. This tidy dataset takes the mean and standard deviation values provided by the UCI repository and averages them by volunteer and activity. A summary of the file `features_info.txt` from the UCI data set is copied below. Measurements not used in the tidydata analysis are excluded from this code book. Several variable names have been altered to agree with R naming convention and syntax. The volunteer and activity data were merged into the UCI features data set to produce the tidydata average groupings. 
+All data in this dataset is derived from the accelerometer and gyroscope of a Samsung Galaxy S II. The data produced by `run_analysis.R` is saved to the file `tidydata.txt`. This tidy dataset takes the mean and standard deviation values provided by the UCI repository and averages them by volunteer and activity. The activity data was labeled manually from video of the experiments, see the study's website for links to videos.
+
+A summary of the file `features_info.txt` from the UCI data set is copied below. Measurements not used in the tidydata analysis are excluded from this code book. Several variable names have been altered to agree with R naming convention and syntax. The volunteer and activity data were merged into the UCI features data set to produce the tidydata average groupings.
 
 ## Feature Selection 
 
