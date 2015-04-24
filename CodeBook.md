@@ -2,7 +2,7 @@
 ## Overview
 As explained the README.md file of this repo, the data and much of the explanation for it can be found from the study's host website. See README.md for an explanation of how this dataset was built.
 
-All data in this dataset is derived from the accelerometer and gyroscope of a Samsung Galaxy S II. The data produced by `run_analysis.R` is saved to the file `tidydata.txt`. This tidy dataset takes the mean and standard deviation values provided by the UCI repository and averages them by volunteer and activity. A summary of the file `features_info.txt` from the UCI data set is copied below. Measurements not used in the tidydata analysis are ~~striked~~ through. 
+All data in this dataset is derived from the accelerometer and gyroscope of a Samsung Galaxy S II. The data produced by `run_analysis.R` is saved to the file `tidydata.txt`. This tidy dataset takes the mean and standard deviation values provided by the UCI repository and averages them by volunteer and activity. A summary of the file `features_info.txt` from the UCI data set is copied below. Measurements not used in the tidydata analysis are ~~striked through~~. Several variable names have been altered to agree with R naming syntax. 
 
 ## Feature Selection 
 
@@ -37,21 +37,9 @@ The set of variables that were estimated from these signals are:
 
 * mean(): Mean value
 * std(): Standard deviation
-* mad(): Median absolute deviation 
-* max(): Largest value in array
-* min(): Smallest value in array
-* sma(): Signal magnitude area
-* energy(): Energy measure. Sum of the squares divided by the number of values. 
-* iqr(): Interquartile range 
-* entropy(): Signal entropy
-* arCoeff(): Autorregresion coefficients with Burg order equal to 4
-* correlation(): correlation coefficient between two signals
-* maxInds(): index of the frequency component with largest magnitude
-* meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-* skewness(): skewness of the frequency domain signal 
-* kurtosis(): kurtosis of the frequency domain signal 
-* bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
-* angle(): Angle between to vectors.
+
+_edit: only mean and standard deviation values were included in the tidydata.txt dataset_
+
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
