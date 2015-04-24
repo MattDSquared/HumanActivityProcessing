@@ -15,8 +15,10 @@ Subsequently, the body linear acceleration and angular velocity were derived in 
 Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
 
 These signals were used to estimate variables of the feature vector for each pattern:  
-'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions. The data is summarized by the first two variables, subject and activity
 
+* subject
+* activity
 * tBodyAcc.XYZ
 * tGravityAcc.XYZ
 * tBodyAccJerk.XYZ
@@ -40,7 +42,9 @@ The set of variables that were estimated from these signals are:
 * mean.: Mean value
 * std.: Standard deviation
 
-_edit: only mean and standard deviation values were included in the tidydata.txt dataset_
+The variable and feature are combined to make a list of 79 unique variables (not listed here for brevity). For example, the features 'tBodyAcc.XYZ' and the variable 'mean' combine into the unique variables: 'tBodyAcc.mean.X', 'tBodyAcc.mean.Y', 'tBodyAcc.mean.Z'.
+
+_Note: only mean and standard deviation values were included in the tidydata.txt dataset_
 
 _The complete list of variables of each feature vector is available in 'features.txt' of the UCI data_
 
