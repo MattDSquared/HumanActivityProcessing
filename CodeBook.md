@@ -2,7 +2,16 @@
 ## Overview
 As explained the README.md file of this repo, the data and much of the explanation for it can be found from the study's host website. See README.md for an explanation of how this dataset was built.
 
-All data in this dataset is derived from the accelerometer and gyroscope of a Samsung Galaxy S II. The data produced by `run_analysis.R` is saved to the file `tidydata.txt`. This tidy dataset takes the mean and standard deviation values provided by the UCI repository and averages them by volunteer and activity. A summary of the file `features_info.txt` from the UCI data set is copied below. Measurements not used in the tidydata analysis are ~~striked through~~. Several variable names have been altered to agree with R naming syntax. 
+All data in this dataset is derived from the accelerometer and gyroscope of a Samsung Galaxy S II. The data produced by `run_analysis.R` is saved to the file `tidydata.txt`. This tidy dataset takes the mean and standard deviation values provided by the UCI repository and averages them by volunteer and activity. A summary of the file `features_info.txt` from the UCI data set is copied below. Measurements not used in the tidydata analysis are excluded from this code book. Several variable names have been altered to agree with R naming syntax. 
+
+The volunteer and activity data were merged into the UCI features data set to produce the tidydata average groupings. The Volunteer is an integer between 1 and 30, and the activity is any of the following text: 
+
+* WALKING
+* WALKING_UPSTAIRS
+* WALKING_DOWNSTAIRS
+* SITTING
+* STANDING
+* LYING
 
 ## Feature Selection 
 
@@ -40,13 +49,4 @@ The set of variables that were estimated from these signals are:
 
 _edit: only mean and standard deviation values were included in the tidydata.txt dataset_
 
-
-Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
-
-* gravityMean
-* tBodyAccMean
-* tBodyAccJerkMean
-* tBodyGyroMean
-* tBodyGyroJerkMean
-
-The complete list of variables of each feature vector is available in 'features.txt'
+_The complete list of variables of each feature vector is available in 'features.txt' of the UCI data_
