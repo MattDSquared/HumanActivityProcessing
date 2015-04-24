@@ -1,4 +1,4 @@
-# HumanActivityProcessing
+# Human Activity Processing
 Welcome! This is from a Coursera project designed to practice getting and cleaning data. The original data are from a study performed by the Università degli Studi di Genova, Genoa (I-16145), Italy which measured intertial data from a smartphone during various activities. The data is housed by the UC Irvine Machine Learning Repository. More details about the study can be found at the link below.
 
 <http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones>
