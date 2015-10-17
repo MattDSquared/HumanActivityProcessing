@@ -44,6 +44,8 @@ activities <- readLines(con); close(con)
 startat <- regexpr(" ", activities)
 startat <- startat + attr(startat, "match.length")
 activities <- substring(activities, startat)
+# rename laying to lying
+activities <- sub("LAYING", "LYING", activities)
 
 # load data
 train.data <- read.table(paste(filepath,"train/X_train.txt", sep=""), 
@@ -95,4 +97,4 @@ datasummary <- DT %>% group_by(subject,activity) %>% summarise_each(funs(mean))
 # =============================================================================
 # 6. Write data
 # =============================================================================
-write.table(datasummary, "tidydata.csv", row.name = FALSE)
+write.table(datasummary, "tidydata.txt", row.name = FALSE)
